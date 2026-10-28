@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mia Jaenike</title>
+  <meta name="description" content="Mia Jaenike — M.A. student in Quantitative Methods at the University of Chicago, interested in quantitative finance, econometrics, and data science.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #fbfaf7;
+      --text: #1d1d1f;
+      --muted: #5f5f66;
+      --rule: #e4e1da;
+      --accent: #8a1f2b;      /* deep maroon */
+      --chip: #f1eee7;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #141416;
+        --text: #ececee;
+        --muted: #a0a0a8;
+        --rule: #2c2c31;
+        --accent: #e58a93;
+        --chip: #1f1f23;
+      }
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 16px/1.65 Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+    }
+    main { max-width: 680px; margin: 0 auto; padding: 72px 20px 56px; }
+    a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+    a:hover { text-decoration-thickness: 2px; }
+
+    header h1 {
+      font-family: Newsreader, Georgia, serif;
+      font-weight: 500;
+      font-size: clamp(2.4rem, 7vw, 3.2rem);
+      line-height: 1.1;
+      letter-spacing: -0.01em;
+      margin: 0 0 10px;
+    }
+    .tagline { color: var(--muted); font-size: 1.05rem; margin: 0 0 28px; }
+
+    .links { display: flex; flex-wrap: wrap; gap: 10px; margin: 0 0 8px; padding: 0; list-style: none; }
+    .links a {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 8px 14px;
+      border: 1px solid var(--rule);
+      border-radius: 999px;
+      background: var(--chip);
+      color: var(--text);
+      text-decoration: none;
+      font-size: 0.92rem; font-weight: 500;
+      transition: border-color .15s, color .15s;
+    }
+    .links a:hover { border-color: var(--accent); color: var(--accent); }
+    .links a.primary { background: var(--accent); border-color: var(--accent); color: var(--bg); }
+    .links a.primary:hover { opacity: .9; color: var(--bg); }
+    .links svg { width: 16px; height: 16px; fill: currentColor; flex: none; }
+
+    section { margin-top: 52px; }
+    h2 {
+      font-size: 0.78rem; font-weight: 600;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      color: var(--muted);
+      margin: 0 0 16px; padding-bottom: 8px;
+      border-bottom: 1px solid var(--rule);
+    }
+    p { margin: 0 0 14px; }
+
+    .item { margin-bottom: 22px; }
+    .item-head { display: flex; justify-content: space-between; gap: 2px 16px; flex-wrap: wrap; }
+    .item h3 { font-size: 1rem; font-weight: 600; margin: 0; }
+    .item .when { color: var(--muted); font-size: 0.9rem; white-space: nowrap; }
+    .item .role { color: var(--muted); font-style: italic; margin: 2px 0 6px; }
+    .item p { margin: 0; }
+
+    footer {
+      margin-top: 64px; padding-top: 18px;
+      border-top: 1px solid var(--rule);
+      color: var(--muted); font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Mia Jaenike</h1>
+    <p class="tagline">M.A. in Quantitative Methods at the University of Chicago &middot; econometrics, data science, and quantitative finance</p>
+
+    <ul class="links">
+      <li><a class="primary" href="Mia_Jaenike_Resume.pdf" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8zm-1 1.5L18.5 9H13zM8 13h8v1.5H8zm0 3.5h8V18H8z"/></svg>
+        Resume</a></li>
+      <li><a href="https://github.com/mjaenike" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg>
+        GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/mia-jaenike-86b2b5296" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+        LinkedIn</a></li>
+      <li><a href="mailto:miaajaenike@gmail.com">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.2-8 5-8-5V6l8 5 8-5z"/></svg>
+        Email</a></li>
+    </ul>
+  </header>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>I'm a master's student in the Quantitative Methods track of the MAPSS program at the University of Chicago. I graduated from Bates College in 2026 with a B.A. in Economics, minors in Mathematics and Digital &amp; Computational Studies, Phi Beta Kappa, and I spent a year studying at the London School of Economics.</p>
+    <p>My work sits where econometrics meets data science: building datasets from APIs and the web, turning text into signals, and testing what those signals say about markets and behavior. I'm especially interested in quantitative finance, and I serve as Professional Outreach Chair for the Phoenix Quant Collective at UChicago.</p>
+  </section>
+
+  <section id="research">
+    <h2>Research</h2>
+
+    <div class="item">
+      <div class="item-head">
+        <h3>Reddit Sentiment and AI Product Announcements</h3>
+        <span class="when">2025</span>
+      </div>
+      <div class="role">Senior thesis, Bates College</div>
+      <p>Built a daily firm-level sentiment signal from ~15,000 Reddit posts and comments and tested whether retail-investor sentiment predicts abnormal stock returns around AI product announcements. Sentiment Granger-causes next-day abnormal returns (but not the reverse), and VAR impulse responses show the effect fades within about three days.</p>
+    </div>
+
+    <div class="item">
+      <div class="item-head">
+        <h3>Crowdfunding Campaigns at Scale</h3>
+        <span class="when">2025 – 2026</span>
+      </div>
+      <div class="role">Research Assistant, Vassar College</div>
+      <p>Led collection of a 15-million-observation GoFundMe dataset through recursive API calls and HTML scraping, and used TF-IDF features with LASSO regression to categorize campaigns.</p>
+    </div>
+
+    <div class="item">
+      <div class="item-head">
+        <h3>AI-Assisted Cognitive Work</h3>
+        <span class="when">2025 – 2026</span>
+      </div>
+      <div class="role">Research Assistant, Bates College</div>
+      <p>Built oTree and Qualtrics experiments for an NSF-funded project on labor task substitution and perceptions of AI-assisted work.</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Tools</h2>
+    <p>Python, R, SQL, Stata &middot; pandas, scikit-learn, StatsModels, tidyverse &middot; panel methods, event studies, VAR, LASSO, NLP</p>
+  </section>
+
+  <footer>
+    &copy; 2026 Mia Jaenike &middot; Chicago, IL
+  </footer>
+</main>
+</body>
+</html>
